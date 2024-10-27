@@ -96,12 +96,14 @@ function nextQuestion() {
 }
 
 function displayResults() {
+    document.getElementById('questionnaireForm').style.display = 'none';
     const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `<h4>Your Responses:</h4>`;
+    resultDiv.innerHTML = `<h3>Your Responses:</h3>`;
     console.log(answers);
     for (const [key, value] of Object.entries(answers)) {
         resultDiv.innerHTML += `<p>${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}</p>`;
     }
+
     sendPromptToGemini();
 }
 
