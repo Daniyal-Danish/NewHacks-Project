@@ -2,42 +2,42 @@ const questions = [
     {
         question: "1. What is the primary use case for the device?",
         type: "radio",
-        name: "use Case",
+        name: "Use Case",
         options: ["School", "Work", "Personal", "Entertainment"],
         required: true
     },
     {
         question: "2. Do you reuse the same 3-4 passwords for most of your accounts?",
         type: "radio",
-        name: "preference",
+        name: "Password Reuse",
         options: ["Yes", "No"],
         required: true
     },
     {
         question: "3. Have you enabled 2-factor/multiple factor authentication on all you accounts?",
         type: "radio",
-        name: "rating",
+        name: "2FA",
         options: ["Yes", "No", "Some Accounts"],
         required: true
     },
     {
         question: "4. When you download files or application, where do you usually get them from?",
         type: "radio",
-        name: "rating",
+        name: "Download Files",
         options: ["Official Websites/App Stores", "Links From Emails/Ads", "File-Sharing Sites", "Third-Party Stores"],
         required: true
     },
     {
         question: "5. If you are informed that your account has been involved in a data breach, what would you do?",
         type: "radio",
-        name: "rating",
+        name: "Data Breach",
         options: ["Change Password", "Read But Don't Take Action", "Ignore It"],
         required: true
     },
     {
         question: "6. When freely roaming the internet, what websites do you usually visit?",
         type: "radio",
-        name: "rating",
+        name: "Roaming Websites",
         options: ["Social Media", "Third-Party Websites", "Dating Websites", "Gaming Websites", "E-Commerce/Shopping Websites", "Other"],
         required: true
     },
