@@ -22,12 +22,12 @@ input, button {
     font-size: 1em;
 }
 button {
-    background-color: #4CAF50;
+    background-color: #00cfb9;
     color: white;
     border: none;
     cursor: pointer;
 }
 button:hover {
-    background-color: #45a049;
+    background-color: #00bbd1;
 }
 
