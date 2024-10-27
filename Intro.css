@@ -1,0 +1,33 @@
+body {
+    background-color: #1d1c1e; /* from Updated upstream */
+    color: #f2f2f7;
+    display: flex;             /* from Stashed changes */
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #333; /* from Stashed changes */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #4CAF50; /* from Stashed changes */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* from Stashed changes */
+}
