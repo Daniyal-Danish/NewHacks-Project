@@ -3,11 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Questions.css">
-    <title>Welcome</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+        }
+        .container {
+            text-align: center;
+        }
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 70px
+        }
+        h1 {
+            font-size: 100px;
+            color: white;
+            margin: 0;
+        }
+        img {
+            width: 300px; 
+            height: 300px;
+        }
+        button {
+            padding: 40px 50px;
+            font-size: 40px;
+            margin-top: 30px;
+            margin: 30px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background-color: #00cfb9;
+            color: white;
+        }
+        button:hover {
+            background-color: #00bbd1;
+        }
+    </style>
 </head>
 <body>
-    <h2>Welcome Page</h2>
-    <p>You have successfully logged in!</p>
+    <div class="container">
+        <div class="title-container">
+            <img src="images/image.png" alt="Logo">
+            <h1>GuardList</h1>
+        </div>
+        <button type="submit" href="/login.html">Login</button>
+        <button type="submit" href="/Register.html">Register</button>
+    </div>
 </body>
 </html>
