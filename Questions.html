@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Questionnaire</title>
+    <link rel="stylesheet" href="Question.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cybersecurity Questionnaire</h2>
+        <form id="questionnaireForm">
+            <div id="questionContainer" class="question-container">
+                <!-- Questions will be injected here by JavaScript -->
+            </div>
+            <button type="button" id="nextButton" onclick="nextQuestion()">Next</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="Questions.js"></script>
+</body>
+</html>
