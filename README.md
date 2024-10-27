@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  <img src="images/Login.png" width="250px" height="225px"/>
-  <img src="images/Checklist.png" width="400px" height="275px"/>
+  <img src="images/Login.png" width="275px" height="250px"/>
+  <img src="images/Checklist.png" width="275px" height="250px"/>
   <img src="images/Question.png" width="275px" height="250px"/>
 </p>
 
