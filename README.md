@@ -1,15 +1,27 @@
+<p align="center">
+  <img src="images/Logo.png" width="200px" height="200px"/>
+</p>
+
 <div align="center">
   <h1>GuardList</h1>
   <p> One major problem with the digital world is that people often struggle with maintaining a safe digital environment. Cyberly is a cybersecurity checklist, personalized to help each user maintain their safety online. </p>
 </div>
 
+<p align="center">
+  <img src="images/Welcome.png" width="300px" height="300px"/>
+</p>
+  <img src="images/Login.png" width="325px" height="300px"/>
+  <img src="images/Checklist.png" width="475px" height="325px"/>
+  <img src="images/Question.png" width="350px" height="325px"/>
+
+[Website Link](https://www.guardlist.co/)
+
 ## What Is GuardList?
 An innovative cybersecurity website that uses HTML, JavaScript, and CSS to give an intuitive cybersecurity checklist that gives users suggestions on how to improve their safety online. Using a quick questionnaire answered by the user, we use generative AI to provide a personalized checklist for the user to follow. This checklist is a guide for the user to follow and create a safer cyber environment for themselves.
 
 ## Features
-* **Questionnaire:**
-* **Generative AI:**
-* **Grading Score:**
+* **Questionnaire:** There is an interactive questionnaire that asks the user about their online actions and how impactful they are.
+* **Generative AI:** Using the questionnaire, we used Gemini's API to create a live, personalized checklist for each user.
 
 ## Contributors
 * [Daniyal (@Daniyal-Danish)](https://github.com/Daniyal-Danish)
