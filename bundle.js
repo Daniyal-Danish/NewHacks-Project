@@ -6,7 +6,7 @@ function sendPromptToGemini() {
     const promptElement = document.getElementById("result");
     let prompt = "RETURN A CHECKLIST WITH ITEMS THAT WOULD INCREASE YOUR CYBER SECURITY. Here is what the user entered for their info (Respond to the concerning information they give you)";
     prompt += localStorage.getItem("resultString");
-    prompt += "return it in JSON format, strictly as a list[Item], Item = {value: info} without weird whitespace";
+    prompt += "return it in JSON format, strictly as a list[Item], Item = {value: info} without weird whitespace, and only plain text without * ";
 
     console.log(prompt);
     const { GoogleGenerativeAI } = require("@google/generative-ai");
@@ -17,7 +17,9 @@ function sendPromptToGemini() {
         trimmedResult = trimmedResult.substring(0, trimmedResult.indexOf(']') + 1);  
         console.log(trimmedResult);
         const responseObject = JSON.parse(trimmedResult);
-        localStorage.setItem("result", responseObject.toString()); 
+        localStorage.setItem("result", JSON.stringify(responseObject)); 
+        window.location.href = "checklist.html";
+ 
     });
 }
 
