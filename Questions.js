@@ -99,11 +99,13 @@ function displayResults() {
     document.getElementById('questionnaireForm').style.display = 'none';
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `<h3>Your Responses:</h3>`;
+    let resultString = '';
     console.log(answers);
     for (const [key, value] of Object.entries(answers)) {
+        resultString += `${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}\n`;
         resultDiv.innerHTML += `<p>${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}</p>`;
     }
-
+    localStorage.setItem('resultString', resultString);
     sendPromptToGemini();
 }
 

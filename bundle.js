@@ -4,14 +4,20 @@
 function sendPromptToGemini() {
     console.log("HELLO");
     const promptElement = document.getElementById("result");
-    let prompt = "RETURN A CHECKLIST WITH ITEMS THAT WOULD INCREASE YOUR CYBER SECURITY and return it strictly as a list[Item], Item = {value: info}. Here is what the user entered for their info:";
-    prompt += promptElement.value;
-    console.log(promptElement);
+    let prompt = "RETURN A CHECKLIST WITH ITEMS THAT WOULD INCREASE YOUR CYBER SECURITY. Here is what the user entered for their info:";
+    prompt += localStorage.getItem("resultString");
+    prompt += "return it in JSON format, strictly as a list[Item], Item = {value: info} without weird whitespace";
+
+    console.log(prompt);
     const { GoogleGenerativeAI } = require("@google/generative-ai");
     const genAI = new GoogleGenerativeAI("AIzaSyA6HqDl6tkvRX9pVol_MNv5FsLGrkJEKgo");
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     model.generateContent(prompt).then((result) => {
-        console.log(result.response.text());
+        let trimmedResult = result.response.text().substring(result.response.text().indexOf('['));
+        trimmedResult = trimmedResult.substring(0, trimmedResult.indexOf(']') + 1);
+        console.log(trimmedResult);
+        const responseObject = JSON.parse(trimmedResult);
+        localStorage.setItem("result", responseObject.toString()); 
     });
 }
 
