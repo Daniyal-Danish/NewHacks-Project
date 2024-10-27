@@ -25,4 +25,4 @@ An innovative cybersecurity website that uses HTML, JavaScript, and CSS to give 
 
 ### Backend
 * **JavaScript**
-* **Gemini API**
+* **Gemini API** 
