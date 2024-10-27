@@ -4,7 +4,7 @@
 function sendPromptToGemini() {
     console.log("HELLO");
     const promptElement = document.getElementById("result");
-    let prompt = "RETURN A CHECKLIST WITH ITEMS THAT WOULD INCREASE YOUR CYBER SECURITY. Here is what the user entered for their info:";
+    let prompt = "RETURN A CHECKLIST WITH ITEMS THAT WOULD INCREASE YOUR CYBER SECURITY. Here is what the user entered for their info (Respond to the concerning information they give you)";
     prompt += localStorage.getItem("resultString");
     prompt += "return it in JSON format, strictly as a list[Item], Item = {value: info} without weird whitespace";
 
@@ -14,7 +14,7 @@ function sendPromptToGemini() {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     model.generateContent(prompt).then((result) => {
         let trimmedResult = result.response.text().substring(result.response.text().indexOf('['));
-        trimmedResult = trimmedResult.substring(0, trimmedResult.indexOf(']') + 1);
+        trimmedResult = trimmedResult.substring(0, trimmedResult.indexOf(']') + 1);  
         console.log(trimmedResult);
         const responseObject = JSON.parse(trimmedResult);
         localStorage.setItem("result", responseObject.toString()); 
