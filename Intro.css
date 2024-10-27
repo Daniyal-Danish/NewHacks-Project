@@ -1,0 +1,33 @@
+body {
+    background-color: #1c1c1e;
+    color: #f2f2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+h2 {
+    color: #f2f2f7;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1em;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+
