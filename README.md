@@ -14,7 +14,7 @@
   <img src="images/Checklist.png" width="475px" height="325px"/>
   <img src="images/Question.png" width="350px" height="325px"/>
 
-[Website Link](https://www.guardlist.co/)
+[Website Link](https://.guardlist.co/)
 
 ## What Is GuardList?
 An innovative cybersecurity website that uses HTML, JavaScript, and CSS to give an intuitive cybersecurity checklist that gives users suggestions on how to improve their safety online. Using a quick questionnaire answered by the user, we use generative AI to provide a personalized checklist for the user to follow. This checklist is a guide for the user to follow and create a safer cyber environment for themselves.
