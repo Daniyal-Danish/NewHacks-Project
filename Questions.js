@@ -45,9 +45,6 @@ const questions = [
         question: "7. Please provide additional comments:",
         type: "textarea",
         name: "comments"
-    },
-    {
-        question: "Results"
     }
 ];
 
@@ -105,6 +102,7 @@ function displayResults() {
     for (const [key, value] of Object.entries(answers)) {
         resultDiv.innerHTML += `<p>${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}</p>`;
     }
+    sendPromptToGemini();
 }
 
 // Load the first question when the page loads
